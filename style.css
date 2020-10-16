@@ -1,0 +1,281 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.header{
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+
+.header__inner{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.wrapper-cats{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+.cats__img{
+  width: 300px;
+
+}
+
+.cats__img img{
+  width: 100%;
+  height: 100%;
+}
+
+.cats__item{
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: rgba(0,0,0, 0.3);
+  cursor: pointer;
+
+}
+
+.btn-createcats,
+.back button,
+.button-form__change,
+.change,
+.delete-cat {
+  border: none;
+  height: 35px;
+  width: 130px;
+  cursor: pointer;
+}
+
+.delete-cat{
+  margin-left: 10px;
+}
+
+.plus,
+.minus{
+  font-size: 24px;
+
+}
+
+.like__count{
+  font-size: 22px;
+}
+
+.cats__item-info{
+max-width: 500px;
+margin-left: 20px;
+}
+
+.cats__name,
+.cat__name {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info-name{
+  font-weight: 400;
+}
+
+.cats_description,
+.cat_description {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cat__likes{
+  margin-bottom: 10px;
+}
+
+.cat__item-info{
+  padding: 0 10px;
+}
+
+.info-description{
+  font-weight: 400;
+}
+
+.cats__likes{
+  display: flex;
+  max-width: 40px;
+  justify-content: space-between;
+}
+.cats__likes span + span{
+  margin-left: 5px;
+}
+
+.like-success,
+.dislike {
+  width: 130px;
+  line-height: 30px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -400px;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  background-color: green;
+  transition: all .3s;
+}
+
+.dislike{
+  background-color: red;
+}
+
+.like-success.active,
+.dislike.active{
+  top: 20px;
+}
+
+
+.popup-create,
+.popup-change {
+
+position: absolute;
+right: -500px;
+top: 0;
+max-width: 440px;
+width: 100%;
+background-color: #ccc;
+text-align: center;
+border-radius: 15px;
+transition: all .3s;
+}
+
+.popup-create.active,
+.popup-change.active{
+  right: 50%;
+  transform: translateX(50%);
+}
+
+
+.createForm,
+.changeForm {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0px;
+}
+
+.createForm label,
+.changeForm label {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.createForm input,
+.createForm textarea,
+.changeForm input,
+.changeForm textarea {
+  margin-top: 9px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.createForm input,
+.changeForm input{
+  height: 30px;
+  border-radius: 20px;
+  padding: 0px 10px;
+  border: none;
+}
+
+.createForm textarea,
+.changeForm textarea{
+  height: 80px;
+  padding-top: 10px;
+  padding-left: 10px;
+  resize: none;
+}
+
+.close{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+right: 10px;
+top: 10px;
+cursor: pointer;
+}
+
+.close::before{
+  content: '';
+  height: 20px;
+  width: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+      transform: translate(8px)  rotate(45deg);
+}
+
+.close::after {
+  content: '';
+  height: 20px;
+  width: 3px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-9px) rotate(-45deg);
+}
+
+
+.button-form{
+border: none;
+height: 30px;
+width: 100px;
+}
+
+.wrapper__cat {
+  text-align: center;
+  display: none;
+  padding-bottom: 10px;
+}
+
+.back{
+  display: none;
+}
+
+.wrapper__cat {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cat__img{
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cat__img img{
+  width: 100%;
+}
